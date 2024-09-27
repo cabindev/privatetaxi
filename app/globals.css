@@ -5,12 +5,20 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --primary: #F59E0B;
+  --secondary: #D97706;
+  --text-primary: #1F2937;
+  --text-secondary: #4B5563;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
+    --primary: #F59E0B;
+    --secondary: #D97706;
+    --text-primary: #F3F4F6;
+    --text-secondary: #D1D5DB;
   }
 }
 
@@ -24,4 +32,8 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+  shadow-text {
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+  }
 }
+
