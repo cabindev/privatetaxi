@@ -2,7 +2,7 @@ import { FaFacebook, FaLine, FaInstagram, FaWhatsapp } from 'react-icons/fa';
 
 export default function Footer() {
   return (
-    <footer className="footer bg-gradient-to-r from-blue-100 to-indigo-200 text-base-content p-10">
+    <footer className="footer bg-indigo-300 text-indigo-800 p-10">
       <nav>
         <h6 className="footer-title">Our Services</h6>
         <a className="link link-hover">Airport Transfer</a>
@@ -20,14 +20,14 @@ export default function Footer() {
       <nav>
         <h6 className="footer-title">Contact</h6>
         <a className="link link-hover">Phone: 092-269-1269</a>
-        <a className="link link-hover">Email: contact@privatetaxi.com</a>
-        <a className="link link-hover">Line: @privatetaxi</a>
+        <a className="link link-hover">Email: nbnoom@gmail.com</a>
+        <a className="link link-hover">Line: ID : 092-2691269</a>
         <a className="link link-hover">Address: Pattaya, Thailand</a>
       </nav>
       <nav>
         <h6 className="footer-title">Social</h6>
         <div className="grid grid-flow-col gap-4">
-          <a href="#" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.facebook.com/share/1qFU1fir97eVSg8i/?mibextid=qi2Omg" target="_blank" rel="noopener noreferrer">
             <FaFacebook className="fill-current w-6 h-6" />
           </a>
           <a href="https://line.me/R/ti/p/~092-2691269" target="_blank" rel="noopener noreferrer">

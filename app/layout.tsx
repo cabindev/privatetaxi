@@ -2,6 +2,8 @@ import './globals.css'
 import type { Metadata } from 'next'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
+import UrgentReservation from './components/UrgentReservation'
+
 
 export const metadata: Metadata = {
   title: 'Private Taxi',
@@ -18,6 +20,7 @@ export default function RootLayout({
       <body>
         <Navbar />
         {children}
+       <UrgentReservation/>
         <Footer/>
       </body>
     </html>

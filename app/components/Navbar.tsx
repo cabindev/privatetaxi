@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 export default function Navbar() {
   return (
-    <div className="navbar bg-base-100 bg-opacity-80 backdrop-blur-sm fixed top-0 z-10">
+    <div className="navbar bg-base-100 bg-opacity-0 text-indigo-800 backdrop-blur-sm fixed top-0 z-10">
       <div className="navbar-start">
         <div className="dropdown">
           <label tabIndex={0} className="btn btn-ghost lg:hidden">
