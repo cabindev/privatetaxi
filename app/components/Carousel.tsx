@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 
-const images = ['/images/1.jpg', '/images/2.jpg'];
+const images = ['/images/2.jpg', '/images/1.jpg'];
 
 export default function Carousel() {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -22,7 +22,7 @@ export default function Carousel() {
         <div
           key={src}
           className={`absolute top-0 left-0 w-full h-full transition-opacity duration-1000 ease-in-out ${
-            index === currentIndex ? 'opacity-100' : 'opacity-0'
+            index === currentIndex ? "opacity-100" : "opacity-0"
           }`}
         >
           <Image
@@ -35,9 +35,19 @@ export default function Carousel() {
         </div>
       ))}
       <div className="absolute inset-0 flex flex-col items-center justify-center text-white text-center p-4">
-        <h1 className="text-5xl font-bold mb-4 shadow-text">Welcome to Private Taxi Tours</h1>
-        <p className="text-2xl mb-8 shadow-text">Explore the world with comfort and style</p>
-        <Link href="/contact" className="btn btn-primary btn-lg">
+        <h1 className="text-5xl font-bold mb-4 shadow-text">
+          Welcome to Private Taxi Tours
+        </h1>
+        <p className="text-2xl mb-8 shadow-text">
+          Explore the world with comfort and style
+        </p>
+        <Link
+          href="/contact"
+          className="btn btn-lg bg-gradient-to-r from-indigo-500 to-purple-600 
+             text-white border-none hover:from-indigo-600 hover:to-purple-700 
+             transition-all duration-300 shadow-lg hover:shadow-xl 
+             transform hover:-translate-y-1"
+        >
           Book Your Adventure Now
         </Link>
       </div>
@@ -46,7 +56,9 @@ export default function Carousel() {
           <button
             key={index}
             className={`w-4 h-4 rounded-full transition-colors duration-300 ${
-              index === currentIndex ? 'bg-amber-500' : 'bg-white/50 hover:bg-amber-500/50'
+              index === currentIndex
+                ? "bg-amber-500"
+                : "bg-white/50 hover:bg-amber-500/50"
             }`}
             onClick={() => setCurrentIndex(index)}
           />

@@ -19,7 +19,7 @@ const prices = [
   [1500, 1600, 1800, 2200, 0],
   [1400, 1500, 1600, 2000, 0],
   [700, 800, 900, 1200, 1400],
-  [2700, 2800, 3000, 3800, 4400],
+  [2800, 2900, 3000, 3800, 4400],
   [1000, 1100, 1200, 1500, 0]
 ];
 
@@ -28,12 +28,12 @@ export default function Pricing() {
   const [selectedLocation, setSelectedLocation] = useState(0);
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-indigo-100 to-indigo-200 py-12 pt-40 px-4 sm:px-6 lg:px-8">
+    <div className="min-h-screen bg-gradient-to-br from-indigo-100 to-indigo-200 py-12 px-4 sm:px-6 lg:px-8 pt-safe">
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-2xl sm:text-3xl font-extrabold text-gray-900 text-center mb-2">
+        <h2 className="text-2xl sm:text-3xl font-extrabold text-gray-900 text-center mb-2 shadow-text">
           Pattaya and Bangkok to Destination Pricing
         </h2>
-        <h4 className="text-lg sm:text-xl font-semibold text-gray-700 text-center mb-8">
+        <h4 className="text-lg sm:text-xl font-semibold text-gray-700 text-center mb-8 shadow-text">
           ราคาค่าบริการจากพัทยาและกรุงเทพไปยังจุดหมายปลายทาง
         </h4>
 
